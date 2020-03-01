@@ -11,7 +11,7 @@ body {
   left: 0;
   height: 100%;
   width: 0;
-  padding-top: 100px;
+  padding-top: 60px;
   background-color: rgb(192, 17, 163);
   z-index: 1;
   transition: 0.5s;
@@ -22,8 +22,9 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  margin-left: 50px;
-  font-size: 60px;
+  /* margin-left: 50px; */
+  font-size: 95px;
+  /* font-weight: bold; */
 }
 
 .sideMenu a {
@@ -35,10 +36,11 @@ body {
   color: white;
   transition: 0.3s;
   letter-spacing: 5px;
+  /* font-family: 'Made canvas'; */
 }
 
 /* SIDE MENU HOVER EFFECT - adds hover effects */
-.sideMenu-wrapper {
+#sideMenu-wrapper {
   margin-top: 100px;
 }
 
