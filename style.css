@@ -1,0 +1,84 @@
+body {
+  overflow: hidden;
+  background: pink;
+  margin: 0;
+}
+
+/* SIDE MENU STYLE - positions side menu */
+.sideMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  padding-top: 100px;
+  background-color: rgb(192, 17, 163);
+  z-index: 1;
+  transition: 0.5s;
+  overflow-x: hidden;
+}
+
+.sideMenu .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-left: 50px;
+  font-size: 60px;
+}
+
+.sideMenu a {
+  display: block;
+  padding: 4px 4px 4px 16px;
+  font-size: 44px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+  letter-spacing: 5px;
+}
+
+/* SIDE MENU HOVER EFFECT - adds hover effects */
+.sideMenu-wrapper {
+  margin-top: 100px;
+}
+
+#sideMenu-wrapper a:after {
+  content: '';
+  position: absolute;
+  left: 0%;
+  height: 50px;
+  width: 0;
+  background: pink;
+  transition: width .35s ease-in-out;
+  z-index: -1;
+}
+
+#sideMenu-wrapper a:hover {
+  padding-left: 64px;
+  transition: 0.35s ease-in-out;
+}
+
+#sideMenu-wrapper a:hover:after {
+  width: 10%;
+} 
+
+
+/* PAGE CONTENT - styles text */
+#page-content {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 8em;
+  letter-spacing: 12px;
+  padding: 30px;
+  color: hotpink;
+}
+
+span {
+  letter-spacing: 50px;
+  padding-left: 44px;
+  color: rgb(192, 17, 163);
+}
